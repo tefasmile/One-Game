@@ -32,4 +32,9 @@ var comparar = function(eleccion1, eleccion2){
 			return ("papel gana");
 		}
 	}
+	else if(eleccion1 === "papel"){
+		if (eleccion2 === "piedra"){
+			return ("gana papel");
+		}
+	}
 };
