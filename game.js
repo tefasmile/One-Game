@@ -17,5 +17,19 @@ if((computadoraElige >= 0)&&(computadoraElige <= 0.33)){
 var comparar = function(eleccion1, eleccion2){
 	if(eleccion1 === eleccion2){
 		return ("¡Es un empate");
-	};
+	}
+};
+
+//¿Qué pasa si la eleccion1 es piedra?
+var comparar = function(eleccion1, eleccion2){
+	if(eleccion1 === eleccion2){
+		return ("¡Es un empate");
+	}
+	if (eleccion1 === "piedra") {
+		if (eleccion2 === "tijera") {
+			return ("piedra gana");
+		}else{
+			return ("papel gana");
+		}
+	}
 };
