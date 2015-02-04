@@ -25,16 +25,23 @@ var comparar = function(eleccion1, eleccion2){
 	if(eleccion1 === eleccion2){
 		return ("¡Es un empate");
 	}
-	if (eleccion1 === "piedra") {
+	if (eleccion1 === "piedra") {//si es piedra
 		if (eleccion2 === "tijera") {
 			return ("piedra gana");
 		}else{
 			return ("papel gana");
 		}
 	}
-	else if(eleccion1 === "papel"){
+	else if(eleccion1 === "papel"){//si es papel
 		if (eleccion2 === "piedra"){
 			return ("gana papel");
 		}
 	}
+	 if(eleccion1 === "tijera"){//si es tijera
+        if(eleccion2 === "piedra"){
+            return ("gana piedra");
+        }if(eleccion2 === "papel"){
+            return ("gana tijera");
+        }
+    }
 };
