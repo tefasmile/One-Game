@@ -1,5 +1,6 @@
 /**Juego de piedra, papel o tijera en JS***/
 
+//Creacion de variables
 var usuarioElige = prompt("¿Piedra,Papel o Tijera?");
 var computadoraElige = Math.random();//computadora al azar.
 
@@ -11,3 +12,10 @@ if((computadoraElige >= 0)&&(computadoraElige <= 0.33)){
 }else{
     alert("tijera");  
 } 
+
+//¡Las dos opciones son iguales!
+var comparar = function(eleccion1, eleccion2){
+	if(eleccion1 === eleccion2){
+		return ("¡Es un empate");
+	};
+};

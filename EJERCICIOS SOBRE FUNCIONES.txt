@@ -1,0 +1,120 @@
+EJERCICIOS SOBRE FUNCIONES
+
+-------------------------
+-------------------------
+
+var velocidad = 80;
+
+if( velocidad > 80)
+{
+	console.log("bajá la velocidad");
+}
+else{
+	console.log("Manejo seguro");
+}
+
+
+mayor o igual que >=
+menor o igual que <=
+
+--------------------------------
+
+var dividirPorTres = function(number){
+	var val = number/3;
+	console.log(val);
+};
+dividirPorTres(6);
+
+
+var Saludo = function(name){
+	console.log("Hola"+" "+name);
+}
+Saludo("tefa");
+
+var saludo = function(name){
+	console.log("Que bueno verte"+" "+name);
+}
+saludo("kaliman");
+------------------------
+
+El comando return simplemente devuelve el valor que resulta de la funcion
+
+var porDos = function(numero) {
+    return numero * 2;
+};
+
+// llama a porDos acá
+var nuevoNumero = 8;
+console.log(nuevoNumero);
+porDos(4);
+-------------------------------------------------
+
+var unCuarto = function(numero){
+	return numero/4;
+};
+
+
+if(unCuarto(0) % 3 == 0){
+	console.log("Sentencia verdadera");
+}else{
+	console.log("Sentencia Falsa");
+}
+-------------------------------------------------
+
+var perimetroCaja = function(longitud,ancho){
+    return longitud + longitud + ancho + ancho;
+};
+
+perimetroCaja(2,2,5,5);
+
+-----------------------------------------
+
+var global:
+
+var mensaje = "Callme";
+
+var respuesta = function(muestraMsn){
+	alert(mensaje);
+}
+
+var local:
+
+function CrearMensaje(){
+	var mensaje="Llamada";
+	console.log(mensaje);
+}
+-------------------------------------------
+
+var mi_numero = 7; //esto tiene ambito global
+
+var porDos = function(numero){
+	var mi_numero = numero * 2;
+	console.log("Dentro de la funcion mi_numero es: ");
+	console.log(mi_numero); 
+};
+
+porDos(7);
+
+console.log("Fuera de la funcion mi_numero es: ");
+console.log(mi_numero); 
+
+-----
+function crear_mensaje(){
+	var mensaje = "Hola que tal";
+}
+crear_mensaje();
+alert(mensaje);
+
+------------------------------------
+
+var controlDescanso = function(cantHoras){
+   if(cantHoras >= 8)
+    {
+        return console.log("¡Estás durmiendo suficiente! ¡Demasiado quizás!");
+    }else(cantHoras <= 8)
+    {
+        return console.log("¡Cerrá los ojos un poco más!");
+    } 
+};
+
+controlDescanso(10);
